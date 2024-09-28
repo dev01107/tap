@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background: linear-gradient(to right, #6a11cb, black);
+    color: #fff; /* White text color */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .coinBox {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space below the coin box */
+    text-align: center; /* Center the text */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Evenly space buttons */
+    width: 100%; /* Full width for buttons */
+    margin-top: 20px; /* Space above the buttons */
+    padding: 0 20px; /* Padding for container */
+  }
+  
+  .taskItem {
+    margin: 10px 0; /* Vertical margin */
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 90%; /* Full width */
+    text-align: center; /* Center text */
+  }
+  
+  .completeTaskButton {
+    padding: 10px 15px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%; /* Button width for better touch targets */
+  }
+  
+  .completeTaskButton:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    .completeTaskButton {
+      padding: 8px 10px; /* Smaller button padding */
+    }
+  }
+  

@@ -1,0 +1,50 @@
+/* src/ReferralPage.css */
+.referralContainer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border-radius: 10px;
+    color: #fff;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children */
+}
+
+.referralTitle {
+    font-size: 36px; /* Larger font size for the title */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold title */
+}
+
+.referralID {
+    font-size: 24px; /* Size for the referral ID */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.referralNote {
+    font-size: 20px; /* Font size for the note */
+    margin: 15px 0;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    .referralTitle {
+        font-size: 28px; /* Smaller title font size for mobile */
+    }
+
+    .referralID {
+        font-size: 20px; /* Smaller referral ID font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .referralNote {
+        font-size: 18px; /* Smaller note font size */
+    }
+
+    .referralContainer {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+}

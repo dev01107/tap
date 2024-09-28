@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .coinBox {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space below the coin box */
+    text-align: center; /* Center the text */
+  }
+  
+  .imageContainer {
+    margin: 20px;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+  }
+  
+  .circularImage {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .circularImage:hover {
+    transform: scale(1.1);
+  }
+  
+  .buttonContainer {
+    display: flex; /* Align buttons in a row */
+    justify-content: space-between; /* Evenly space buttons */
+    width: 100%; /* Full width for buttons */
+    margin-top: 20px; /* Space above the buttons */
+    padding: 0 20px; /* Padding for container */
+  }
+  
+  .taskButton, .earnButton, .referralButton {
+    flex: 1; /* Make buttons flexible and take equal space */
+    padding: 15px; /* Padding for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px; /* Horizontal margin for spacing */
+    background-color: #007bff; /* Default color for buttons */
+    color: white; /* Button text color */
+    transition: background-color 0.3s, transform 0.2s; /* Add transition */
+  }
+  
+  .taskButton:hover, .earnButton:hover, .referralButton:hover {
+    background-color: #0056b3; /* Hover effect for all buttons */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Specific color for earn button */
+  .earnButton {
+    background-color: #28a745;
+  }
+  
+  .earnButton:hover {
+    background-color: #218838; /* Hover effect for earn button */
+  }
+  
+  /* Specific color for referral button */
+  .referralButton {
+    background-color: #17a2b8; /* Color for Referral button */
+  }
+  
+  .referralButton:hover {
+    background-color: #138496; /* Hover effect for referral button */
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 24px; /* Smaller heading size for mobile */
+    }
+  
+    .coinBox {
+      font-size: 18px; /* Smaller font size */
+    }
+  
+    .circularImage {
+      width: 80vw; /* Responsive width */
+      height: 80vw; /* Responsive height */
+      max-width: 150px; /* Limit max size */
+    }
+  
+    .taskButton, .earnButton, .referralButton {
+      font-size: 14px; /* Smaller button font size */
+      width: 90%; /* Full width for buttons on mobile */
+      margin: 5px 0; /* Vertical margin on mobile */
+    }
+  
+    .buttonContainer {
+      flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+  }
+  
